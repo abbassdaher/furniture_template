@@ -142,6 +142,7 @@ img {
 }
 
 nav {
+
     flex: 5;
     text-align: center;
 }
@@ -734,9 +735,22 @@ nav {
 
 }
 
-.saepe-section img {
+/* .saepe-section img {
+    flex: 1;
     width: 100%;
+} */
+.saepe-section .image {
+    flex: 1;
+
 }
+
+.saepe-section .image img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
 
 .saepe-section .penelope .penelope-head:first-child {
     font-weight: bold;
@@ -835,3 +849,178 @@ nav {
 .social-icon li a i {
     color: var(--white);
 }
+
+/* 
+Design for desktop displays from 1024×768 through 1920×1080
+Design for tablet displays from 601×962 through 1280×800 
+Design for mobile displays from 360×640 through 414×896
+*/
+@media screen and (max-width:1920px) {
+    .penelope-description {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .list-navbar li {
+        padding: 10px 6px;
+    }
+
+    .list-navbar-item {
+
+        margin: 0;
+    }
+.profile{
+    flex: 2;
+}
+    .profile li {
+        font-size: 10px;
+    }
+
+    .profile li i {
+        margin: 0 2px;
+        font-size: large;
+    }
+    .list-of-client{
+        flex-wrap: wrap;
+    }
+
+    .profile li:last-child i::after {
+        position: absolute;
+        content: "0";
+        background-color: var(--brownColor);
+        top: 11px;
+        left: 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        color: aliceblue;
+        text-align: center;
+        line-height: 10px;
+        font-size: 9px;
+    }
+
+    .penelope-description {
+        font-size: 15px;
+    }
+
+    .point-slider li {
+        width: 6px;
+        height: 6px;
+    }
+
+    .flash-slider li {
+        width: 35px;
+        height: 39px;
+    }
+
+    .category-item-arow i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icons i {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .saepe-section .image {
+        flex: 1;
+    }
+
+    .saepe-section img {}
+
+}
+
+@media screen and (max-width:601px) {
+    .navbar-content {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .list-navbar .list-navbar-item{
+        /* visibility: hidden; */
+        /* scale: 0; */
+        display: block;
+    }
+
+    nav {
+        /* height: 0; */
+    }
+    
+    .dropdown {
+        left: -151px;
+        /* scale: 0; */
+    }
+
+    .profile {
+        flex: 6;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .profile li {
+        font-size: 10px;
+
+    }
+
+    .container {
+        width: 99%;
+        margin: auto;
+    }
+
+    .flash-slider li {
+        scale: 0;
+    }
+
+    .section-padding {
+        padding: 8px 0px;
+    }
+
+    .category-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-item h3 {
+        text-transform: capitalize;
+        font-size: small;
+        margin-top: 2px;
+    }
+    .discount{
+        display: inline-block;
+    }
+    .designing-section{
+        margin: 10px 0;
+    }
+    .sprite-section{
+        margin: 20px 0;
+    }
+    .sprite-info{
+
+    }
+    .sprite-info{
+        font-size: 10px;
+    }
+    .sprite-info h3{
+        font-size: 12px;
+    }
+    .saepe-section{
+        display: inline-block;
+    }
+    .saepe-section .image{
+        width: 100%;
+    }
+    .list-of-client{
+        flex-wrap: wrap;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+    }
+    .about{
+        margin: 0 10px 15px 0;
+    }
+    
+
+    }
